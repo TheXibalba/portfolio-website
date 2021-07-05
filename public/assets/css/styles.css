@@ -463,6 +463,9 @@ img {
     height: 15rem;
     width: 30rem;
   }
+  .home__container {
+    height: 625px ;
+  }
   .footer {
     flex-direction: column;
     justify-content: space-evenly;
@@ -487,10 +490,11 @@ img {
 
 @media screen and (min-height: 721px) {
   .home__container {
-    height: 525px;
+    height: 600px;
   }
   .home__img {
-    width: 500px;
+    width: 400px;
+    height:400px;
     right: 24%;
   }
 }

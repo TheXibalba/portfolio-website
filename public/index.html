@@ -228,22 +228,23 @@
             <span class="contact__text">MH, India.</span>
           </div>
 
-          <form action="" class="contact__form">
+          <form action="/contact" method="POST" class="contact__form">
             <div class="contact__inputs">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 class="contact__input"
               />
               <input
-                type="mail"
-                placeholder="Your Email ID"
+                type="email" name="email"
+                placeholder="Your Email ID" 
                 class="contact__input"
               />
             </div>
 
             <textarea
-              name=""
+              name="message"
               id=""
               cols="0"
               rows="10"

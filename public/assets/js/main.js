@@ -74,7 +74,12 @@ sr.reveal(".contact__input", { delay: 400 });
 sr.reveal(".contact__button", { delay: 600 });
 
 //MAP
-function initMap() {
+var script = document.createElement("script");
+script.src =
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Zx9dPERh9CIC1gcCQPU9Qmbha_J3QqA&callback=initMap";
+script.async = true;
+
+window.initMap = function () {
   let options = {
     zoom: 15,
     center: {
@@ -90,4 +95,6 @@ function initMap() {
     },
     map: map,
   });
-}
+};
+
+document.head.appendChild(script);
